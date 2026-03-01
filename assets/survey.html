@@ -1,0 +1,66 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+<h1 id="title">Survey Form Project 1.0</h1>
+<p id="description">This is created for the purpose of passing this project.</p>
+  <form id="survey-form" action="mailto:kyle.serina05@gmail.com" method="POST">
+    <section>
+    <fieldset>
+    <legend>Personal Information</legend>
+    <label id="name-label">Full Name:</label>
+    <input required id="name" type="text" placeholder="e.g. Kyle Serina">
+    <p> </p>
+      <label id="email-label">Email address*:</label>
+    <input required id="email" type="email" placeholder="example@example.com">
+     <p> </p>
+      <label id="number-label">Age (Optional):</label>
+    <input required min="3" max="100" id="number" type="number" placeholder="Age">
+    </fieldset>
+    </section>
+    <section>
+ <fieldset>
+   <legend>Personal Experiences with freeCodeCamp</legend>
+   <label for="dropdown">Which best describes your experience at the CodeCamp</label>
+   <select id="dropdown">
+   <option disabled selected value="">Please select</option>
+     <option value="poor">Poor</option>
+     <option value="good">Good</option>
+     <option value="very-good">Very Good</option>
+     <option value="excellent">Excellent</option>
+      </select>
+      <p></p>
+     <label for="reco">Will you recommend the free course to your friends?</label>
+     <input required type="radio" name="reco" id="reco" value="yes">Yes</input>
+<input required type="radio" name="reco" id="reco" value="no">No</input>
+<p></p>
+<label for="ads">Where have you heard about the freeCodeCamp? (Select all that applies)</label>
+<p></p>
+  <input type="checkbox" id="ads" name="choice" value="social-media">Social Media</input>
+  <input type="checkbox" id="ads" name="choice" value="word-of-mouth">Friends, family, co-workers</input>
+   <input type="checkbox" id="ads" name="choice" value="advertisement">Advertisements</input>
+    <input type="checkbox" id="ads" name="choice" value="tv-news">TV News</input>
+      <input type="checkbox" id="ads" name="choice" value="online-web">Online websites</input>
+   </fieldset>
+   </section>
+   <p></p>
+   <section>
+     <h2>Tell us your feedback</h2>
+     <p>This is the feedback section for the project.</p>
+     <p></p>
+      <p><em>Suggestion box</em></p>
+      <textarea id="msg" name="msg" cols="50" rows="10" placeholder="What's on your mind?"></textarea>
+   </section>
+   <button for="survey-form" id="submit" type="submit">Submit</button>
+    <button for="survey-form" id="reset" type="reset">Reset</button>
+  </form>
+  </body>
+</html>
+
+** end of index.html **
+
